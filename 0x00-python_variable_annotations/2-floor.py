@@ -1,4 +1,4 @@
-#!/usr/bin/enc python3
+#!/usr/bin/env python3
 """Contains function that calculates the floor of a number"""
 import math
 
