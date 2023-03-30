@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Module that defines function add"""
 
 def add(a: float, b: float) ->float:
