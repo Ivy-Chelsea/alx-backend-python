@@ -1,4 +1,4 @@
-#!/usr/bin/ env python3
+#!/usr/bin/env python3
 """Module conatining function to_kv"""
 from typing import Union, Tuple
 
