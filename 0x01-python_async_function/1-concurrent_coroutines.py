@@ -5,7 +5,6 @@ specified delay between each call.
 """
 import asyncio
 from typing import List
-
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
@@ -19,5 +18,5 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     Returns:
         list of delays
     """
-    dlay = [asyncio.create_dlay(wait_random(max_delay)) for _ in range(n)]
-    return [await dlay for dlay in asyncio.as_completed(dlay)]
+    tasks = [asyncio.create_tasks(wait_random(max_delay)) for _ in range(n)]
+    return [await tasks for tasks in asyncio.as_completed(tasks)]
